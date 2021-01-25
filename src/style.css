@@ -1,0 +1,28 @@
+
+.header {
+    background-color: teal;
+    color: white
+}
+
+.quizz {
+display: grid;
+grid-gap: 30px;
+grid-template-areas:
+"Questions" 
+"Answers"
+"Tags";
+grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
+
+}.nav-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
+
+.nav-footer a {
+   
+}
