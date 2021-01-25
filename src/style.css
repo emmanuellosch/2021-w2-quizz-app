@@ -1,19 +1,39 @@
 
 .header {
     background-color: teal;
-    color: white
+    color: white;
+    float: none;
+    text-align: center;
 }
 
 .quizz {
 display: grid;
 grid-gap: 30px;
 grid-template-areas:
-"Questions" 
-"Answers"
-"Tags";
+"quiz1" 
+"quiz2"
+"quiz3";
 grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
 
-}.nav-footer {
+}
+
+.quiz-1 {
+    grid-area: quiz1;
+  }
+  .quiz-2 {
+    grid-area: quiz2;
+  }
+  .quiz-3 {
+    grid-area: quiz3;
+  }
+  
+  .quiz {
+    background-color: darkgrey;
+    padding: 0.5 rem;
+    border-bottom: turquoise 5px solid;
+  }
+
+.nav-footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -24,5 +44,10 @@ grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
 }
 
 .nav-footer a {
-   
+    float: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
