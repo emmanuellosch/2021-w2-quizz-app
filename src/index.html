@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="quiz-app.js"></script>
 </head>
 
 <body>
 <header class="header">
     <h1>Theater Quiz</h1>
 </header>
+<h2>Show your Performance-Talent!</h2>
 
 
 <form action="grade.php" method="post" class="quizz">
 
     <div class="quiz quiz-1">
-        <h3>Show your Performance-Talent!</h3>
+        <h3>Question 1: </h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Rem non eum deserunt mollitia voluptate? Recusandae veniam dicta ipsam quaerat impedit!</p>
     </div>
@@ -34,8 +36,7 @@
     </div>
     </div> 
     
-    <input type="submit" value="Submit Quiz" />
-
+    <button type="submit" formaction="send.php">Senden</button>
 </form>
 
 
@@ -43,9 +44,10 @@
     
 <footer>
     <div class="nav-footer">
-        <a class="active" href="#questions">Questions</a>
-        <a href="#answers">Answers</a>
-        <a href="#profile">Profile</a>
+        <a class="active" href="index.html">Home</a>
+        <a href="bookmarks.html">Favorites</a>
+        <a href="create.html">Create Card</a>
+        <a href="profile.html">Profile</a>
     </div> 
 </footer>
 

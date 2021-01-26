@@ -1,9 +1,20 @@
 
+* {
+    box-sizing: border-box;
+  }
+
+* {
+    box-sizing: content-box;
+}
+
 .header {
     background-color: teal;
     color: white;
     float: none;
-    text-align: center;
+    text-align: center; 
+    width: auto;   
+    height: auto;
+    padding: 0.5rem;
 }
 
 .quizz {
@@ -31,6 +42,7 @@ grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
     background-color: darkgrey;
     padding: 0.5 rem;
     border-bottom: turquoise 5px solid;
+    margin-top: 25px;
   }
 
 .nav-footer {
@@ -51,3 +63,27 @@ grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
     text-decoration: none;
     font-size: 17px;
 }
+
+button {
+    background-color: grey; 
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 50px;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button:active {
+  background-color:turquoise;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+   
