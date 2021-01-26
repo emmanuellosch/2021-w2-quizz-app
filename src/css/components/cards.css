@@ -27,12 +27,13 @@
   "card_taglist"
   "card_listitem";
   grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
- 
+   
+  }
   
-  
+  .hidden { 
+    display: none; 
+  }
 
-
-}
 
 .nav-footer {
     position: fixed;
@@ -66,6 +67,4 @@
 
   }
     
-  .button-submit {
-    position: absolute; 
-  }
+  
