@@ -1,0 +1,71 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+    background-color: teal;
+    color: white;
+    float: none;
+    text-align: center; 
+    width: auto;   
+    height: auto;
+    padding: 0.5rem;
+}
+
+.card {
+  border: turquoise 3px solid;
+  max-width: 40rem;
+  padding: 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+  "card_question"
+  "card_button"
+  "card_taglist"
+  "card_listitem";
+  grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
+ 
+  
+  
+
+
+}
+
+.nav-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center;
+  }
+  
+  .nav-footer a {
+      float: none;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  button {
+    background-color:turquoise; 
+    border: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1rem;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+    
+  .button-submit {
+    position: absolute; 
+  }
