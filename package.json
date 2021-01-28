@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html",  
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emmanuellosch/2021-w2-quizz-app.git"
