@@ -1,8 +1,8 @@
 :root {
-    --primary:grey;
-    --secondary:turquoise;  
-
+    --primary: gray #ededed;
+    --secondary:#40e0d0;  
     --ff-sans:"helvetica";
+    
 }
 
 *, 
@@ -20,7 +20,11 @@ p {
 }
 
 .subtitle {
-    margin-left: 20pt;
+margin-left: 20pt;  
+color:#000000;
+font-weight: bold;
+text-align: center;
+
 }
 
 ul[class],
@@ -32,4 +36,10 @@ ol[class] {
 body {
     font-size: 1.25rem;
     line-height: 1.5;
+    background-image: url("../images/stefano-stacchini-xCUctJnFY8k-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
 }

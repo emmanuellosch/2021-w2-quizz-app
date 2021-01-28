@@ -6,17 +6,21 @@
 }
 
 .header {
-    background-color: teal;
-    color: white;
+    background-color: #f6fafa;
+    color: #920505;
     float: none;
     text-align: center; 
     width: auto;   
     height: auto;
     padding: 0.5rem;
+    opacity: 0.5;
 }
 
 .card {
-  border: turquoise 3px solid;
+ background-color: #f6fafa;
+ border: 2px #920505 solid;
+ opacity: 0.5;
+ text-shadow: ;
   max-width: 40rem;
   padding: 2rem;
   margin: 0 auto;
@@ -29,25 +33,89 @@
    
   }
 
+.card_headline {
+  color:#000000;
+  font-weight: bold;
+}
+
+  .card_question {
+    color:#000000;
+    font-weight: bold;
+  }
+
+  .answer_buttons {
+    color:#000000;
+    font-weight: bold;
+  }
+
+  .card_answer {
+    color:#000000;
+    font-weight: bold;
+  }
+
 .btn:hover {
   border-color: black;
 }
 
+.bookmark {
+  display: block;
+  position: relative;
+}
+
+.bookmark2 {
+  display: block;
+  position: relative;
+}
+.bookmark3 {
+  display: block;
+  position: relative;
+}
+.bookmark4 {
+  display: block;
+  position: relative;
+}
+
+.book {
+  position:absolute; 
+  left: 300px; 
+  top: -40px;
+}
+
+.book2 {
+  position:absolute; 
+  left: 300px; 
+  top: -40px;
+}
+.book3 {
+  position:absolute; 
+  left: 300px; 
+  top: -40px;
+}
+.book4 {
+  position:absolute; 
+  left: 300px; 
+  top: -40px;
+}
+
+.bookmark.book:hover {
+  color: #920505
+}
 
 .nav-footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: teal;
-    color: white;
+    background-color: #f6fafa;
+    color: #920505;
     text-align: center;
     padding: 0.5rem;  
+    opacity: 0.5;
 }
   
   .nav-footer a {
       float: none;
-      color: #f2f2f2;
+      color: #920505;
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -63,6 +131,20 @@ a.active .fa-home {
 background-color:yellowgreen;
 }
 
+a.active .fa-book {
+  background-color:yellowgreen;
+
+}
+
+a.active .fa-pencil {
+  background-color:yellowgreen;
+
+}
+
+a.active .fa-user {
+  background-color:yellowgreen;
+
+}
 
   .submit {
     background-color:turquoise; 
