@@ -20,16 +20,18 @@
  background-color: #f6fafa;
  border: 2px #920505 solid;
  opacity: 0.5;
- text-shadow: ;
   max-width: 40rem;
   padding: 2rem;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
   "card_question"
-  "answer_buttons"
-  "btn";
-  grid-template-columns: repeat(3, auto-fit, minmax(300px, 1fr));
+  "question_list"
+  "btn"
+  "button"
+  "answer1"
+  "hidden";
+  grid-template-columns: repeat(6, auto-fit, minmax(300px, 1fr));
    
   }
 
@@ -43,14 +45,17 @@
     font-weight: bold;
   }
 
-  .answer_buttons {
+  .question_list {
     color:#000000;
     font-weight: bold;
   }
 
-  .card_answer {
-    color:#000000;
-    font-weight: bold;
+  .hidden {
+    visibility: hidden;
+  }
+
+  p {
+    transition: opacity 2s ease-in;
   }
 
 .btn:hover {
@@ -62,43 +67,14 @@
   position: relative;
 }
 
-.bookmark2 {
-  display: block;
-  position: relative;
-}
-.bookmark3 {
-  display: block;
-  position: relative;
-}
-.bookmark4 {
-  display: block;
-  position: relative;
+.active {
+  color: #0404f0;
 }
 
 .book {
   position:absolute; 
   left: 300px; 
   top: -40px;
-}
-
-.book2 {
-  position:absolute; 
-  left: 300px; 
-  top: -40px;
-}
-.book3 {
-  position:absolute; 
-  left: 300px; 
-  top: -40px;
-}
-.book4 {
-  position:absolute; 
-  left: 300px; 
-  top: -40px;
-}
-
-.bookmark.book:hover {
-  color: #920505
 }
 
 .nav-footer {
