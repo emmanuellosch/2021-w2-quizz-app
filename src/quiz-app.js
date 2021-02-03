@@ -28,6 +28,9 @@ bookmark.forEach(bookmark =>
     bookmark.classList.toggle('active')
     }))
 
+const submit =document.querySelector('#submit');
+
+submit.addEventListener('touchstart', function(){}, true);
 
  
 
