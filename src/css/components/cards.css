@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -6,61 +5,82 @@
 }
 
 .header {
-    background-color: #f6fafa;
-    color: #920505;
-    float: none;
-    text-align: center; 
-    width: 100%;   
-    height: 100%;
-    padding: 0.5rem;
-    opacity: 0.5;
-    margin-bottom: 30px;
+  background-color: #f6fafa;
+  color: #920505;
+  float: none;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  opacity: 0.5;
+  margin-bottom: 30px;
 }
 
 .card {
- background-color: #f6fafa;
- border: 2px #920505 solid;
- opacity: 0.5;
-  max-width: 40rem;
+  background-color: #f6fafa;
+  border: 2px #920505 solid;
+  opacity: 0.5;
+  width: 20rem;
+  height: 40rem;
   padding: 2rem;
-  margin: 0;
+  margin-left: 30px;
   display: grid;
   grid-template-areas:
-  "card_question"
-  "question_list"
-  "btn"
-  "button"
-  "answer1"
-  "hidden";
+    "card_question"
+    "question_list"
+    "btn"
+    "button"
+    "answer1"
+    "hidden";
   grid-template-columns: repeat(6, auto-fit, minmax(300px, 1fr));
-   
-  }
+}
 
 .card_headline {
-  color:#000000;
+  color: #000000;
+  font-size: 14px;
+  font-family: var(--ff-sans);
+  font-style: bold;
+}
+
+.card_question {
+  color: #000000;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: var(--ff-sans);
+  margin-top: -50px;
+}
+
+.question_list {
+  color: #000000;
   font-weight: bold;
 }
 
-  .card_question {
-    color:#000000;
-    font-weight: bold;
-  }
+ul {
+  list-style-type: none;
+  font-size: 15px;
+}
 
-  .question_list {
-    color:#000000;
-    font-weight: bold;
-  }
+ul li::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  padding: 0 10px 0 0;
+}
 
-  .hidden {
-    visibility: hidden;
-  }
+.hidden {
+  visibility: hidden;
+  font-size: 12px;
+  font-family: var(--ff-sans);
+  font-style: italic;
+}
 
-  p {
-    transition: opacity 2s ease-in;
-  }
+.answer {
+  font-size: 12px;
+  font-family: var(--ff-sans);
+  font-style: italic;
+}
 
-.btn:hover {
-  border-color: black;
+p {
+  transition: opacity 2s ease-in;
 }
 
 .bookmark {
@@ -73,54 +93,51 @@
 }
 
 .book {
-  position:absolute; 
-  left: 300px; 
+  position: absolute;
+  left: 300px;
   top: -40px;
 }
 
 .nav-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f6fafa;
-    color: #920505;
-    text-align: center;
-    padding: 0.5rem;  
-    opacity: 0.5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6fafa;
+  color: #920505;
+  text-align: center;
+  padding: 0.5rem;
+  opacity: 0.5;
 }
-  
-  .nav-footer a {
-      float: none;
-      color: #920505;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      width: 50px;
-      height: 50px;
+
+.nav-footer a {
+  float: none;
+  color: #920505;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 50px;
+  height: 50px;
 }
 
 .nav-footer a:hover {
-text-shadow:10px 5px 5px black;
+  text-shadow: 10px 5px 5px black;
 }
 
 a.active .fa-home {
-background-color:yellowgreen;
+  background-color: yellowgreen;
 }
 
 a.active .fa-book {
-  background-color:yellowgreen;
-
+  background-color: yellowgreen;
 }
 
 a.active .fa-pencil {
-  background-color:yellowgreen;
-
+  background-color: yellowgreen;
 }
 
 a.active .fa-user {
-  background-color:yellowgreen;
-
+  background-color: yellowgreen;
 }
 
 .submit {
@@ -132,12 +149,4 @@ a.active .fa-user {
   margin-left: 8rem;
   margin-bottom: 80px;
   vertical-align: middle;
-
 }
-  
-  
-
-
-  
-   
-  
