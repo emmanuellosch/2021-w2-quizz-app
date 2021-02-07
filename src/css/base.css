@@ -1,14 +1,13 @@
 :root {
-    --primary: gray #ededed;
-    --secondary:#40e0d0;  
-    --ff-sans:"helvetica";
-    
+  --primary: #920505;
+  --secondary: #f6fafa;
+  --ff-sans: "helvetica";
 }
 
-*, 
+*,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -16,30 +15,28 @@ h1,
 h2,
 h3,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .subtitle {
-margin-left: 20pt;  
-color:#000000;
-font-weight: bold;
-text-align: center;
-
+  margin-left: 20pt;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
 }
 
 ul[class],
 ol[class] {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 body {
-    font-size: 1.25rem;
-    line-height: 1.5;
-    background-image: url("../images/stefano-stacchini-xCUctJnFY8k-unsplash.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  background-image: url("../images/stefano-stacchini-xCUctJnFY8k-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
