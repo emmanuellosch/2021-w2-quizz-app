@@ -75,19 +75,6 @@
   right: 0;
 }
 
-.curtain-trigger {
-  visibility: hidden;
-  position: absolute;
-}
-
-.curtain-trigger:checked ~ .left-curtain {
-  transform: translateX(calc(-100% + 2em));
-}
-
-.curtain-trigger:checked ~ .right-curtain {
-  transform: translateX(calc(100% - 2em));
-}
-
 .curtain_text_left {
   text-align: center;
   display: block;
