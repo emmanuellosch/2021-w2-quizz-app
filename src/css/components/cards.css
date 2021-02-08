@@ -153,8 +153,8 @@ p {
   transition: opacity 2s ease-in;
 }
 
-.btn:hover {
-  border-color: black;
+p {
+  transition: opacity 2s ease-in;
 }
 
 .bookmark {
