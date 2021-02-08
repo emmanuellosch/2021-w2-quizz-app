@@ -14,6 +14,19 @@
   position: relative;
 }
 
+.curtain-trigger {
+  visibility: hidden;
+  position: absolute;
+}
+
+.curtain-trigger:checked ~ .left-curtain {
+  transform: translateX(calc(-100% + 2em));
+}
+
+.curtain-trigger:checked ~ .right-curtain {
+  transform: translateX(calc(100% - 2em));
+}
+
 .curtain-container {
   position: absolute;
   top: 0;
